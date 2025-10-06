@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Menu, X, Satellite } from 'lucide-react';
 
@@ -6,6 +6,31 @@ export default function Navigation() {
   const [businessPlanOpen, setBusinessPlanOpen] = useState(false);
   const [prototypesOpen, setPrototypesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const businessPlanRef = useRef<HTMLDivElement>(null);
+  const prototypesRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (businessPlanRef.current && !businessPlanRef.current.contains(event.target as Node)) {
+        setBusinessPlanOpen(false);
+      }
+      if (prototypesRef.current && !prototypesRef.current.contains(event.target as Node)) {
+        setPrototypesOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  // Close dropdowns when clicking on links
+  const closeAllDropdowns = () => {
+    setBusinessPlanOpen(false);
+    setPrototypesOpen(false);
+  };
 
   return (
     <nav className="bg-black/80 backdrop-blur-sm fixed w-full z-50 border-b border-gray-800">
@@ -19,9 +44,12 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
 
-            <div className="relative">
+            <div className="relative" ref={businessPlanRef}>
               <button
-                onClick={() => setBusinessPlanOpen(!businessPlanOpen)}
+                onClick={() => {
+                  setBusinessPlanOpen(!businessPlanOpen);
+                  setPrototypesOpen(false);
+                }}
                 className="flex items-center space-x-1 hover:text-red-500 transition-colors"
               >
                 <span>Business Plan</span>
@@ -29,19 +57,22 @@ export default function Navigation() {
               </button>
               {businessPlanOpen && (
                 <div className="absolute top-full mt-2 w-64 bg-gray-800 border border-gray-700 rounded-lg shadow-xl">
-                  <Link to="/development" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Development Plan</Link>
-                  <Link to="/financial" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Financial Plan</Link>
-                  <Link to="/scalability" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Scalability & Sustainability</Link>
-                  <Link to="/regulations" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Regulations</Link>
-                  <Link to="/focus" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Our Focus</Link>
-                  <Link to="/future" className="block px-4 py-3 hover:bg-gray-700 transition-colors">Future</Link>
+                  <Link to="/development" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Development Plan</Link>
+                  <Link to="/financial" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Financial Plan</Link>
+                  <Link to="/scalability" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Scalability & Sustainability</Link>
+                  <Link to="/regulations" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Regulations</Link>
+                  <Link to="/focus" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Our Focus</Link>
+                  <Link to="/future" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors">Future</Link>
                 </div>
               )}
             </div>
 
-            <div className="relative">
+            <div className="relative" ref={prototypesRef}>
               <button
-                onClick={() => setPrototypesOpen(!prototypesOpen)}
+                onClick={() => {
+                  setPrototypesOpen(!prototypesOpen);
+                  setBusinessPlanOpen(false);
+                }}
                 className="flex items-center space-x-1 hover:text-red-500 transition-colors"
               >
                 <span>Prototypes & Deliverables</span>
@@ -49,9 +80,9 @@ export default function Navigation() {
               </button>
               {prototypesOpen && (
                 <div className="absolute top-full mt-2 w-72 bg-gray-800 border border-gray-700 rounded-lg shadow-xl">
-                  <Link to="/orca" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">ORCA</Link>
-                  <Link to="/neural-detection" className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Neural Detection System</Link>
-                  <Link to="/technologies" className="block px-4 py-3 hover:bg-gray-700 transition-colors">Technologies powering ORCA</Link>
+                  <Link to="/orca" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">ORCA</Link>
+                  <Link to="/neural-detection" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Neural Detection System</Link>
+                  <Link to="/technologies" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors">Technologies powering ORCA</Link>
                 </div>
               )}
             </div>
