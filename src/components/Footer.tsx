@@ -10,7 +10,7 @@ export default function Footer() {
             alt="ORCA Logo" 
             className="w-6 h-6 object-contain"
           />
-          <span className="text-xl font-bold">O.R.C.A.</span>
+          <span className="text-xl font-bold">Orbital Recycling and Construction Array</span>
         </div>
         <p className="text-gray-400">Orbital Reconnaissance & Cleanup Architecture</p>
         <p className="text-gray-500 mt-4 text-sm">NASA Space Apps Challenge 2025 - Low Orbital Challenge</p>

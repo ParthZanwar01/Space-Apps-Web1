@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-start justify-center">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white">
-              ORCA
+              Orbital Recycling and Construction Array
               <br />
               Technologies
             </h1>

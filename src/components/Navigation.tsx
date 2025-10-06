@@ -42,7 +42,7 @@ export default function Navigation() {
               alt="ORCA Logo" 
               className="w-8 h-8 object-contain"
             />
-            <span className="text-xl font-bold tracking-wider">O.R.C.A.</span>
+            <span className="text-xl font-bold tracking-wider">Orbital Recycling and Construction Array</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

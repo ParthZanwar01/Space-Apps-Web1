@@ -17,10 +17,10 @@ export default function ORCA() {
         <div className="relative max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-6xl font-bold mb-6">O.R.C.A.</h1>
+              <h1 className="text-6xl font-bold mb-6">Orbital Recycling and Construction Array</h1>
               <div className="w-20 h-1 bg-red-500 mb-6"></div>
               <p className="text-2xl text-gray-200 leading-relaxed mb-6 font-light">
-                Orbital Recycling and Construction Array
+                Advanced orbital system for debris recycling and space construction
               </p>
               <p className="text-xl text-gray-300 leading-relaxed mb-6">
                 An advanced orbital system designed to recycle space debris and construct new infrastructure in orbit through innovative manufacturing technologies.
