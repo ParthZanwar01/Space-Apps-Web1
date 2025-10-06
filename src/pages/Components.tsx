@@ -197,15 +197,12 @@ export default function Components() {
                   }`}>
                     {/* Image */}
                     <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                      <div className="relative group">
+                      <div className="relative group h-64 rounded-lg border border-gray-800 flex items-center justify-center bg-gray-900">
                         <img
                           src={component.image}
                           alt={component.title}
-                          className={`w-full object-cover rounded-lg shadow-2xl group-hover:shadow-3xl transition-all duration-500 ${
-                            component.id === 5 || component.id === 6 ? 'h-32' : component.id === 1 ? 'h-64' : 'h-96'
-                          }`}
+                          className="w-3/5 h-3/5 object-contain"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full">
                           <span className="text-white text-sm font-medium">{component.subtitle}</span>
                         </div>
