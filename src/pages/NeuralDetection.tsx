@@ -124,9 +124,20 @@ export default function NeuralDetection() {
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
             The system improves autonomously through reinforcement learning. Each successful debris capture provides new training data, refining detection algorithms and enhancing future mission success rates.
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
             Federated learning across the ORCA fleet enables knowledge sharing between units without centralizing sensitive orbital data, accelerating capability development while maintaining operational security.
           </p>
+          <div className="text-center">
+            <a 
+              href="https://orcaneuralnetwork.space/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              <Brain className="w-5 h-5 mr-2" />
+              Explore Neural Network Demo
+            </a>
+          </div>
         </div>
       </section>
     </div>
