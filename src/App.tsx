@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import ORCA from './pages/ORCA';
 import NeuralDetection from './pages/NeuralDetection';
 import Technologies from './pages/Technologies';
+import Components from './pages/Components';
 import Development from './pages/Development';
 import Financial from './pages/Financial';
 import Scalability from './pages/Scalability';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/orca" element={<ORCA />} />
           <Route path="/neural-detection" element={<NeuralDetection />} />
           <Route path="/technologies" element={<Technologies />} />
+          <Route path="/components" element={<Components />} />
           <Route path="/development" element={<Development />} />
           <Route path="/financial" element={<Financial />} />
           <Route path="/scalability" element={<Scalability />} />

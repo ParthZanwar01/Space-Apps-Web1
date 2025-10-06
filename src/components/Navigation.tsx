@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Menu, X, Satellite } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [businessPlanOpen, setBusinessPlanOpen] = useState(false);
@@ -86,7 +86,8 @@ export default function Navigation() {
                 <div className="absolute top-full mt-2 w-72 bg-gray-800 border border-gray-700 rounded-lg shadow-xl">
                   <Link to="/orca" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">ORCA</Link>
                   <Link to="/neural-detection" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Neural Detection System</Link>
-                  <Link to="/technologies" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors">Technologies powering ORCA</Link>
+                  <Link to="/technologies" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors border-b border-gray-700">Technologies powering ORCA</Link>
+                  <Link to="/components" onClick={closeAllDropdowns} className="block px-4 py-3 hover:bg-gray-700 transition-colors">Core Components</Link>
                 </div>
               )}
             </div>
@@ -119,6 +120,7 @@ export default function Navigation() {
               <Link to="/orca" className="block pl-4 hover:text-red-500 transition-colors">ORCA</Link>
               <Link to="/neural-detection" className="block pl-4 hover:text-red-500 transition-colors">Neural Detection System</Link>
               <Link to="/technologies" className="block pl-4 hover:text-red-500 transition-colors">Technologies</Link>
+              <Link to="/components" className="block pl-4 hover:text-red-500 transition-colors">Core Components</Link>
             </div>
           </div>
         </div>
