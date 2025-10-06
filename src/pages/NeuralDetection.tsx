@@ -76,7 +76,7 @@ export default function NeuralDetection() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2166722/pexels-photo-2166722.jpeg?auto=compress&cs=tinysrgb&w=1920)'
+            backgroundImage: 'url(/images/trainingValidationBg.png)'
           }}
         ></div>
         <div className="relative max-w-5xl mx-auto">

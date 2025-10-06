@@ -31,51 +31,99 @@ export default function Components() {
   const components = [
     {
       id: 1,
-      title: "EBAM",
-      subtitle: "Electron Beam Additive Manufacturing",
-      description: "Revolutionary 3D printing technology that uses electron beams to melt and fuse metal powders in zero gravity. Enables construction of large-scale structures directly in orbit using recycled materials.",
-      image: "/images/ebam.png",
-      icon: Zap,
-      color: "text-yellow-400",
-      features: [
-        "Zero-gravity optimized printing process",
-        "High-precision metal fabrication",
-        "Recycled material compatibility",
-        "Large-scale structure construction"
-      ],
-      applications: "Space station modules, solar arrays, communication arrays, fuel tanks"
-    },
-    {
-      id: 2,
-      title: "EBCHM",
-      subtitle: "Electron Beam Cold-Hearth Melting",
-      description: "Advanced metal purification technology that removes impurities from recycled space debris. Creates high-quality aerospace alloys suitable for critical space infrastructure.",
-      image: "/images/technologies/ebchm-card.jpg",
+      title: "Debris Deposition",
+      subtitle: "Satellite Material Processing",
+      description: "Automated system for depositing and positioning captured debris materials for processing. Ensures proper orientation and secure placement of various satellite components and materials.",
+      image: "/images/bodydecant1.png",
       icon: Settings,
       color: "text-blue-400",
       features: [
-        "Ultra-high purity metal production",
-        "Contamination removal from debris",
-        "Alloy composition control",
-        "Continuous processing capability"
+        "Automated material positioning",
+        "Multi-size component handling",
+        "Secure debris placement",
+        "Precision orientation control"
       ],
-      applications: "Structural components, pressure vessels, thermal management systems"
+      applications: "Initial debris processing, material staging, component organization"
+    },
+    {
+      id: 2,
+      title: "Heat Decontamination",
+      subtitle: "Thermal Cleaning System",
+      description: "High-temperature processing system that removes contaminants, coatings, and impurities from captured debris materials through controlled thermal treatment.",
+      image: "/images/heatcont1.png",
+      icon: Zap,
+      color: "text-red-400",
+      features: [
+        "High-temperature processing",
+        "Contaminant removal",
+        "Coating elimination",
+        "Controlled thermal treatment"
+      ],
+      applications: "Material purification, surface cleaning, contaminant removal"
     },
     {
       id: 3,
-      title: "Gecko Grippers",
-      subtitle: "Biomimetic Debris Capture",
-      description: "Biomimetic gripping system inspired by gecko foot adhesion. Provides reliable debris capture without mechanical fasteners, suitable for various materials and shapes.",
-      image: "/images/gecko.png",
+      title: "Centrifuge Material Sorting",
+      subtitle: "Automated Material Separation",
+      description: "High-speed centrifugal system that separates materials by density and composition, enabling efficient sorting of mixed debris into pure material streams for recycling.",
+      image: "/images/centri1.png",
       icon: Grip,
       color: "text-green-400",
       features: [
-        "Van der Waals force adhesion",
-        "Adaptive surface contact",
-        "Non-destructive capture",
-        "Versatile material compatibility"
+        "Density-based separation",
+        "High-speed processing",
+        "Automated material sorting",
+        "Pure material streams"
       ],
-      applications: "Debris capture, satellite servicing, component manipulation"
+      applications: "Material separation, density sorting, composition analysis"
+    },
+    {
+      id: 4,
+      title: "Slag/Waste Containment",
+      subtitle: "Waste Management System",
+      description: "Secure containment system for processing byproducts and non-recyclable materials, ensuring safe storage and disposal of waste products from the recycling process.",
+      image: "/images/slag1.png",
+      icon: Settings,
+      color: "text-gray-400",
+      features: [
+        "Secure waste containment",
+        "Safe disposal protocols",
+        "Environmental protection",
+        "Process byproduct management"
+      ],
+      applications: "Waste storage, byproduct containment, environmental safety"
+    },
+    {
+      id: 5,
+      title: "Wire Spool",
+      subtitle: "Material Feed System",
+      description: "Automated wire and material feeding system that supplies raw materials to the 3D printer, ensuring continuous operation and precise material delivery for manufacturing processes.",
+      image: "/images/spool1.png",
+      icon: Zap,
+      color: "text-yellow-400",
+      features: [
+        "Automated material feeding",
+        "Continuous operation",
+        "Precise material delivery",
+        "Wire and filament management"
+      ],
+      applications: "Material supply, continuous manufacturing, precision feeding"
+    },
+    {
+      id: 6,
+      title: "3D Printer",
+      subtitle: "Additive Manufacturing",
+      description: "Advanced 3D printing system that constructs new components and structures from recycled materials, enabling on-demand manufacturing of replacement parts and new infrastructure.",
+      image: "/images/printer1.png",
+      icon: Zap,
+      color: "text-purple-400",
+      features: [
+        "Additive manufacturing",
+        "Recycled material processing",
+        "On-demand production",
+        "Precision construction"
+      ],
+      applications: "Component manufacturing, structure construction, replacement parts"
     }
   ];
 
