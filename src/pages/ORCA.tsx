@@ -33,7 +33,7 @@ export default function ORCA() {
               <img 
                 src="/images/satellite.png" 
                 alt="ORCA Satellite 3D Model" 
-                className="w-80 h-80 object-contain"
+                className="w-96 h-96 md:w-[500px] md:h-[500px] object-contain"
               />
             </div>
           </div>

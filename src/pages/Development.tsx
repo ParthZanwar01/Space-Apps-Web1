@@ -162,12 +162,6 @@ export default function Development() {
       </section>
 
       <section className="relative py-20 px-4 bg-gray-900">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2166476/pexels-photo-2166476.jpeg?auto=compress&cs=tinysrgb&w=1920)'
-          }}
-        ></div>
         <div className="relative max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-8">Risk Management & Iterative Development</h2>
           <div className="w-20 h-1 bg-red-500 mb-8"></div>
