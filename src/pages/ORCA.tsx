@@ -28,11 +28,17 @@ export default function ORCA() {
               Our solution combines debris capture, metal refinement, and 3D printing capabilities to transform space waste into valuable construction materials for sustainable orbital operations.
             </p>
           </div>
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full gap-8">
             <img 
-              src="/images/satellite.png" 
-              alt="ORCA Satellite 3D Model" 
-              className="w-[7500px] h-[7500px] md:w-[10500px] md:h-[10500px] lg:w-[12000px] lg:h-[12000px] xl:w-[13500px] xl:h-[13500px] object-contain"
+              src="/images/grabsat.png" 
+              alt="ORCA Grab Satellite" 
+              className="w-[3500px] h-[3500px] md:w-[5000px] md:h-[5000px] lg:w-[6000px] lg:h-[6000px] xl:w-[7000px] xl:h-[7000px] object-contain"
+              style={{ maxWidth: 'none', width: 'auto', height: 'auto' }}
+            />
+            <img 
+              src="/images/websat.png" 
+              alt="ORCA Web Satellite" 
+              className="w-[3500px] h-[3500px] md:w-[5000px] md:h-[5000px] lg:w-[6000px] lg:h-[6000px] xl:w-[7000px] xl:h-[7000px] object-contain"
               style={{ maxWidth: 'none', width: 'auto', height: 'auto' }}
             />
           </div>

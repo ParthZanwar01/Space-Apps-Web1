@@ -201,7 +201,9 @@ export default function Components() {
                         <img
                           src={component.image}
                           alt={component.title}
-                          className="w-4/5 h-4/5 object-contain"
+                          className={`object-contain ${
+                            component.id === 4 ? 'w-5/6 h-5/6' : 'w-4/5 h-4/5'
+                          }`}
                         />
                         <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full">
                           <span className="text-white text-sm font-medium">{component.subtitle}</span>
