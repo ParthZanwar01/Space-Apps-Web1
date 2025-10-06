@@ -2,14 +2,24 @@ import { Target, Zap, Shield, Rocket, Calendar, Wrench, Network } from 'lucide-r
 import { useEffect, useRef, useState } from 'react';
 
 export default function ORCA() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen pt-16">
-      <section className="relative py-32 px-4 overflow-hidden">
+      <section className="relative py-32 px-4 overflow-hidden h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url(https://images.pexels.com/photos/23769/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1920)',
-            filter: 'brightness(0.25)'
+            filter: 'brightness(0.25)',
+            transform: `translateY(${scrollY * 0.5}px)`,
+            willChange: 'transform'
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-gray-900/90"></div>
