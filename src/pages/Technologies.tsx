@@ -55,23 +55,23 @@ export default function Technologies() {
                   <li>• Power Consumption: 10 kW operational requirement</li>
                 </ul>
               </div>
-              <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
-                style={{
-                  backgroundImage: 'url(/images/satellite.png)',
-                  backgroundSize: '60%'
-                }}
-              ></div>
+              <div className="h-64 rounded-lg border border-gray-800 flex items-center justify-center bg-gray-900">
+                <img 
+                  src="/images/satellite.png" 
+                  alt="EBAM Satellite" 
+                  className="w-3/5 h-3/5 object-contain"
+                />
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800 order-2 md:order-1"
-                style={{
-                  backgroundImage: 'url(/images/printer1.png)',
-                  backgroundSize: '60%'
-                }}
-              ></div>
+              <div className="h-64 rounded-lg border border-gray-800 order-2 md:order-1 flex items-center justify-center bg-gray-900">
+                <img 
+                  src="/images/printer1.png" 
+                  alt="EBCHM Satellite" 
+                  className="w-3/5 h-3/5 object-contain"
+                />
+              </div>
               <div className="bg-gray-900/80 backdrop-blur-sm p-8 rounded-lg border border-gray-800 order-1 md:order-2">
                 <Rocket className="w-12 h-12 text-red-500 mb-4" />
                 <h3 className="text-3xl font-bold mb-4">EBCHM - Electron Beam Cold-Hearth Melting</h3>
@@ -101,13 +101,13 @@ export default function Technologies() {
                   <li>• Operating Temperature: -100 to 150°C range</li>
                 </ul>
               </div>
-              <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
-                style={{
-                  backgroundImage: 'url(/images/printer2.png)',
-                  backgroundSize: '60%'
-                }}
-              ></div>
+              <div className="h-64 rounded-lg border border-gray-800 flex items-center justify-center bg-gray-900">
+                <img 
+                  src="/images/printer2.png" 
+                  alt="Gecko Grippers Satellite" 
+                  className="w-3/5 h-3/5 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
