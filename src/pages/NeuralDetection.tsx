@@ -7,7 +7,7 @@ export default function NeuralDetection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+            backgroundImage: 'url(/images/debris_path.png)',
             filter: 'brightness(0.25)'
           }}
         ></div>
