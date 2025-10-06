@@ -12,20 +12,21 @@ export default function ORCA() {
 
   return (
     <div className="min-h-screen pt-16">
-      <section className="relative py-32 px-4 overflow-hidden h-screen">
+      <section className="relative py-32 px-4 overflow-hidden h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url(https://images.pexels.com/photos/23769/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1920)',
             filter: 'brightness(0.25)',
             transform: `translateY(${scrollY * 0.5}px)`,
-            willChange: 'transform'
+            willChange: 'transform',
+            backgroundAttachment: 'fixed'
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-gray-900/90"></div>
 
-        <div className="relative max-w-7xl mx-auto">
-          <div className="mb-8">
+        <div className="relative max-w-7xl mx-auto w-full">
+          <div>
             <h1 className="text-6xl font-bold mb-6">Orbital Recycling and Construction Array</h1>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-2xl text-gray-200 leading-relaxed mb-6 font-light">
