@@ -31,7 +31,7 @@ export default function Components() {
   const components = [
     {
       id: 1,
-      title: "Debris Deposition",
+      title: "Debris Deposition from Satellite",
       subtitle: "Satellite Material Processing",
       description: "Automated system for depositing and positioning captured debris materials for processing. Ensures proper orientation and secure placement of various satellite components and materials.",
       image: "/images/bodydecant2.png",
