@@ -38,7 +38,7 @@ export default function Future() {
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-5 rounded-lg"
                 style={{
-                  backgroundImage: 'url(/images/trafficManagement.png)'
+                  backgroundImage: 'url(/images/orbitalTrafficManagement.png)'
                 }}
               ></div>
               <div>
