@@ -149,7 +149,7 @@ export default function ORCA() {
                 <img 
                   src="/images/satellite.png" 
                   alt="Central Hub" 
-                  className="w-96 h-96 object-contain"
+                  className="w-[500px] h-[500px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] object-contain"
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function ORCA() {
                 <img 
                   src="/images/grabsat.png" 
                   alt="TugSat" 
-                  className="w-96 h-96 object-contain mx-auto"
+                  className="w-[500px] h-[500px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] object-contain mx-auto"
                 />
               </div>
               <div className="order-1 md:order-2">
@@ -201,7 +201,7 @@ export default function ORCA() {
                 <img 
                   src="/images/websat.png" 
                   alt="FishNetSat" 
-                  className="w-96 h-96 object-contain"
+                  className="w-[500px] h-[500px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] object-contain"
                 />
               </div>
             </div>
