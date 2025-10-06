@@ -56,7 +56,7 @@ export default function Technologies() {
                 </ul>
               </div>
               <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
+                className="h-48 bg-cover bg-center rounded-lg border border-gray-800"
                 style={{
                   backgroundImage: 'url(/images/ebam.png)'
                 }}
@@ -65,9 +65,9 @@ export default function Technologies() {
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800 order-2 md:order-1"
+                className="h-48 bg-cover bg-center rounded-lg border border-gray-800 order-2 md:order-1"
                 style={{
-                  backgroundImage: 'url(https://images.pexels.com/photos/2166729/pexels-photo-2166729.jpeg?auto=compress&cs=tinysrgb&w=800)'
+                  backgroundImage: 'url(/images/ebchm.png)'
                 }}
               ></div>
               <div className="bg-gray-900/80 backdrop-blur-sm p-8 rounded-lg border border-gray-800 order-1 md:order-2">
@@ -100,7 +100,7 @@ export default function Technologies() {
                 </ul>
               </div>
               <div
-                className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
+                className="h-48 bg-cover bg-center rounded-lg border border-gray-800"
                 style={{
                   backgroundImage: 'url(/images/gecko.png)'
                 }}
