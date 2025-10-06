@@ -135,7 +135,11 @@ export default function Technologies() {
               </p>
             </div>
             <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
-              <Satellite className="w-12 h-12 text-blue-400 mb-4" />
+              <img 
+                src="/images/logo-img.png" 
+                alt="ORCA Logo" 
+                className="w-12 h-12 mb-4 object-contain"
+              />
               <h3 className="text-xl font-bold mb-3">Communications</h3>
               <p className="text-gray-400">
                 Secure, high-bandwidth communications enable real-time telemetry and remote operation from ground control stations.

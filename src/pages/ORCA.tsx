@@ -73,8 +73,8 @@ export default function ORCA() {
             </div>
             <div className="bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
               <img 
-                src="/satellite.png" 
-                alt="ORCA Satellite" 
+                src="/images/logo-img.png" 
+                alt="ORCA Logo" 
                 className="w-16 h-16 mb-4 object-contain"
               />
               <h3 className="text-xl font-bold mb-3">Scalable Fleet</h3>
