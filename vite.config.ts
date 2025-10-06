@@ -8,9 +8,13 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/index.html'
+    },
   },
   preview: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/index.html'
+    },
   },
 });

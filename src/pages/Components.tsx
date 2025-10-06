@@ -31,10 +31,10 @@ export default function Components() {
   const components = [
     {
       id: 1,
-      title: "Electron Beam Additive Manufacturing (EBAM)",
-      subtitle: "3D Printing in Space",
+      title: "EBAM",
+      subtitle: "Electron Beam Additive Manufacturing",
       description: "Revolutionary 3D printing technology that uses electron beams to melt and fuse metal powders in zero gravity. Enables construction of large-scale structures directly in orbit using recycled materials.",
-      image: "/images/technologies/ebam-card.jpg",
+      image: "/images/ebam.png",
       icon: Zap,
       color: "text-yellow-400",
       features: [
@@ -47,8 +47,8 @@ export default function Components() {
     },
     {
       id: 2,
-      title: "Electron Beam Cold-Hearth Melting (EBCHM)",
-      subtitle: "Metal Refinement System",
+      title: "EBCHM",
+      subtitle: "Electron Beam Cold-Hearth Melting",
       description: "Advanced metal purification technology that removes impurities from recycled space debris. Creates high-quality aerospace alloys suitable for critical space infrastructure.",
       image: "/images/technologies/ebchm-card.jpg",
       icon: Settings,
@@ -63,10 +63,10 @@ export default function Components() {
     },
     {
       id: 3,
-      title: "Gecko-Inspired Grippers",
-      subtitle: "Debris Capture Technology",
+      title: "Gecko Grippers",
+      subtitle: "Biomimetic Debris Capture",
       description: "Biomimetic gripping system inspired by gecko foot adhesion. Provides reliable debris capture without mechanical fasteners, suitable for various materials and shapes.",
-      image: "/images/technologies/gecko-grippers-card.jpg",
+      image: "/images/gecko.png",
       icon: Grip,
       color: "text-green-400",
       features: [

@@ -38,7 +38,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/images/logo-img.png" 
+              src="/images/orcaLogo.png" 
               alt="ORCA Logo" 
               className="w-8 h-8 object-contain"
             />

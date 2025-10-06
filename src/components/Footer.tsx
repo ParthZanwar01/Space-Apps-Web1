@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex items-center justify-center space-x-3 mb-4">
           <img 
-            src="/images/logo-img.png" 
+            src="/images/orcaLogo.png" 
             alt="ORCA Logo" 
             className="w-6 h-6 object-contain"
           />

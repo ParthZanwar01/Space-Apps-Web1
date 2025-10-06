@@ -73,7 +73,7 @@ export default function ORCA() {
             </div>
             <div className="bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
               <img 
-                src="/images/logo-img.png" 
+                src="/images/orcaLogo.png" 
                 alt="ORCA Logo" 
                 className="w-16 h-16 mb-4 object-contain"
               />
