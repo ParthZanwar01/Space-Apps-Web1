@@ -201,7 +201,9 @@ export default function Components() {
                         <img
                           src={component.image}
                           alt={component.title}
-                          className="w-full h-96 object-cover rounded-lg shadow-2xl group-hover:shadow-3xl transition-all duration-500"
+                          className={`w-full object-cover rounded-lg shadow-2xl group-hover:shadow-3xl transition-all duration-500 ${
+                            component.id === 1 || component.id === 5 || component.id === 6 ? 'h-64' : 'h-96'
+                          }`}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full">
