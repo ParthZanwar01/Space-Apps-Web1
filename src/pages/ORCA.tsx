@@ -31,7 +31,7 @@ export default function ORCA() {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/satellite.png" 
+                src="/images/satellite.png" 
                 alt="ORCA Satellite 3D Model" 
                 className="w-80 h-80 object-contain"
               />
