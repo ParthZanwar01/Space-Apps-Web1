@@ -48,26 +48,12 @@ export default function NeuralDetection() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 Convolutional neural networks trained on millions of orbital observations achieve 99.7% accuracy in debris classification.
               </p>
-              <ul className="space-y-2 text-gray-400 mb-6">
+              <ul className="space-y-2 text-gray-400">
                 <li>• Object detection and segmentation</li>
                 <li>• Size and composition estimation</li>
                 <li>• Velocity and trajectory analysis</li>
                 <li>• Collision probability modeling</li>
               </ul>
-              <div className="mt-6">
-                <img 
-                  src="/images/test1.png" 
-                  alt="Neural Network Test Image 1" 
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <a 
-                  href="/images/test1.png" 
-                  download="neural-network-test-1.png"
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
-                >
-                  Download Test Image 1
-                </a>
-              </div>
             </div>
             <div className="bg-gray-900/80 backdrop-blur-sm p-8 rounded-lg border border-gray-800">
               <Activity className="w-12 h-12 text-green-500 mb-4" />
@@ -75,26 +61,12 @@ export default function NeuralDetection() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 Edge computing architecture processes sensor data on-orbit, reducing latency from minutes to milliseconds.
               </p>
-              <ul className="space-y-2 text-gray-400 mb-6">
+              <ul className="space-y-2 text-gray-400">
                 <li>• Instant threat identification</li>
                 <li>• Autonomous decision-making</li>
                 <li>• Adaptive tracking algorithms</li>
                 <li>• Predictive mission planning</li>
               </ul>
-              <div className="mt-6">
-                <img 
-                  src="/images/test2.png" 
-                  alt="Neural Network Test Image 2" 
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <a 
-                  href="/images/test2.png" 
-                  download="neural-network-test-2.png"
-                  className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
-                >
-                  Download Test Image 2
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -165,6 +137,48 @@ export default function NeuralDetection() {
               <Brain className="w-5 h-5 mr-2" />
               Explore Neural Network Demo
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Test Images Section */}
+      <section className="relative py-20 px-4 bg-gray-900">
+        <div className="relative max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Test Images</h2>
+          <div className="w-20 h-1 bg-blue-400 mx-auto mb-12"></div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-lg border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Neural Network Test Image 1</h3>
+              <img 
+                src="/images/test1.png" 
+                alt="Neural Network Test Image 1" 
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+              <a 
+                href="/images/test1.png" 
+                download="neural-network-test-1.png"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+              >
+                Download Test Image 1
+              </a>
+            </div>
+            
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-lg border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Neural Network Test Image 2</h3>
+              <img 
+                src="/images/test2.png" 
+                alt="Neural Network Test Image 2" 
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+              <a 
+                href="/images/test2.png" 
+                download="neural-network-test-2.png"
+                className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
+              >
+                Download Test Image 2
+              </a>
+            </div>
           </div>
         </div>
       </section>
