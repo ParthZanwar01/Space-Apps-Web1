@@ -32,7 +32,7 @@ export default function Components() {
     {
       id: 1,
       title: "Debris Deposition from Satellite",
-      subtitle: "Satellite Material Processing",
+      subtitle: "Debris Deposition",
       description: "Automated system for depositing and positioning captured debris materials for processing. Ensures proper orientation and secure placement of various satellite components and materials.",
       image: "/images/bodydecant2.png",
       icon: Settings,
@@ -48,7 +48,7 @@ export default function Components() {
     {
       id: 2,
       title: "Heat Decontamination",
-      subtitle: "Thermal Cleaning System",
+      subtitle: "Heat Decontamination",
       description: "High-temperature processing system that removes contaminants, coatings, and impurities from captured debris materials through controlled thermal treatment.",
       image: "/images/heatcont2.png",
       icon: Zap,
@@ -64,7 +64,7 @@ export default function Components() {
     {
       id: 3,
       title: "Centrifuge Material Sorting",
-      subtitle: "Automated Material Separation",
+      subtitle: "Centrifuge Sorting",
       description: "High-speed centrifugal system that separates materials by density and composition, enabling efficient sorting of mixed debris into pure material streams for recycling.",
       image: "/images/centri2.png",
       icon: Grip,
@@ -80,7 +80,7 @@ export default function Components() {
     {
       id: 4,
       title: "Slag/Waste Containment",
-      subtitle: "Waste Management System",
+      subtitle: "Waste Containment",
       description: "Secure containment system for processing byproducts and non-recyclable materials, ensuring safe storage and disposal of waste products from the recycling process.",
       image: "/images/slag2.png",
       icon: Settings,
@@ -96,7 +96,7 @@ export default function Components() {
     {
       id: 5,
       title: "Wire Spool",
-      subtitle: "Material Feed System",
+      subtitle: "Wire Spool",
       description: "Automated wire and material feeding system that supplies raw materials to the 3D printer, ensuring continuous operation and precise material delivery for manufacturing processes.",
       image: "/images/spool2.png",
       icon: Zap,
@@ -112,7 +112,7 @@ export default function Components() {
     {
       id: 6,
       title: "3D Printer",
-      subtitle: "Additive Manufacturing",
+      subtitle: "3D Printer",
       description: "Advanced 3D printing system that constructs new components and structures from recycled materials, enabling on-demand manufacturing of replacement parts and new infrastructure.",
       image: "/images/printer2.png",
       icon: Zap,

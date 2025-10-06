@@ -57,8 +57,8 @@ export default function Technologies() {
               </div>
               <div className="h-64 rounded-lg border border-gray-800 flex items-center justify-center bg-gray-900">
                 <img 
-                  src="/images/satellite.png" 
-                  alt="EBAM Satellite" 
+                  src="/images/ebam.png" 
+                  alt="EBAM Technology" 
                   className="w-3/5 h-3/5 object-contain"
                 />
               </div>
@@ -67,8 +67,8 @@ export default function Technologies() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="h-64 rounded-lg border border-gray-800 order-2 md:order-1 flex items-center justify-center bg-gray-900">
                 <img 
-                  src="/images/printer1.png" 
-                  alt="EBCHM Satellite" 
+                  src="/images/ebchm.png" 
+                  alt="EBCHM Technology" 
                   className="w-3/5 h-3/5 object-contain"
                 />
               </div>
@@ -103,8 +103,8 @@ export default function Technologies() {
               </div>
               <div className="h-64 rounded-lg border border-gray-800 flex items-center justify-center bg-gray-900">
                 <img 
-                  src="/images/printer2.png" 
-                  alt="Gecko Grippers Satellite" 
+                  src="/images/gecko.png" 
+                  alt="Gecko Grippers Technology" 
                   className="w-3/5 h-3/5 object-contain"
                 />
               </div>
