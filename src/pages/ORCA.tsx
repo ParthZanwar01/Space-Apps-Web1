@@ -15,27 +15,26 @@ export default function ORCA() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-gray-900/90"></div>
 
         <div className="relative max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-6xl font-bold mb-6">Orbital Recycling and Construction Array</h1>
-              <div className="w-20 h-1 bg-red-500 mb-6"></div>
-              <p className="text-2xl text-gray-200 leading-relaxed mb-6 font-light">
-                Advanced orbital system for debris recycling and space construction
-              </p>
-              <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                An advanced orbital system designed to recycle space debris and construct new infrastructure in orbit through innovative manufacturing technologies.
-              </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                Our solution combines debris capture, metal refinement, and 3D printing capabilities to transform space waste into valuable construction materials for sustainable orbital operations.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="/images/satellite.png" 
-                alt="ORCA Satellite 3D Model" 
-                className="w-[7500px] h-[7500px] md:w-[10500px] md:h-[10500px] lg:w-[12000px] lg:h-[12000px] xl:w-[13500px] xl:h-[13500px] object-contain"
-              />
-            </div>
+          <div className="mb-8">
+            <h1 className="text-6xl font-bold mb-6">Orbital Recycling and Construction Array</h1>
+            <div className="w-20 h-1 bg-red-500 mb-6"></div>
+            <p className="text-2xl text-gray-200 leading-relaxed mb-6 font-light">
+              Advanced orbital system for debris recycling and space construction
+            </p>
+            <p className="text-xl text-gray-300 leading-relaxed mb-6">
+              An advanced orbital system designed to recycle space debris and construct new infrastructure in orbit through innovative manufacturing technologies.
+            </p>
+            <p className="text-lg text-gray-400 leading-relaxed">
+              Our solution combines debris capture, metal refinement, and 3D printing capabilities to transform space waste into valuable construction materials for sustainable orbital operations.
+            </p>
+          </div>
+          <div className="flex justify-center w-full">
+            <img 
+              src="/images/satellite.png" 
+              alt="ORCA Satellite 3D Model" 
+              className="w-[7500px] h-[7500px] md:w-[10500px] md:h-[10500px] lg:w-[12000px] lg:h-[12000px] xl:w-[13500px] xl:h-[13500px] object-contain"
+              style={{ maxWidth: 'none', width: 'auto', height: 'auto' }}
+            />
           </div>
         </div>
       </section>
