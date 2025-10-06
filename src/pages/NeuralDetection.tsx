@@ -24,18 +24,9 @@ export default function NeuralDetection() {
               <p className="text-xl text-gray-200 leading-relaxed mb-6">
                 Our AI-powered neural network processes real-time satellite data to identify and classify space debris with unprecedented accuracy.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Machine learning algorithms continuously improve detection capabilities, enabling proactive threat assessment and intelligent mission planning.
               </p>
-              <a 
-                href="https://orcaneuralnetwork.space/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              >
-                <Brain className="w-5 h-5 mr-2" />
-                Explore Neural Network Demo
-              </a>
             </div>
           </div>
         </div>
