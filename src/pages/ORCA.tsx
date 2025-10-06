@@ -32,13 +32,13 @@ export default function ORCA() {
             <img 
               src="/images/grabsat.png" 
               alt="ORCA Grab Satellite" 
-              className="w-[3500px] h-[3500px] md:w-[5000px] md:h-[5000px] lg:w-[6000px] lg:h-[6000px] xl:w-[7000px] xl:h-[7000px] object-contain"
+              className="w-[800px] h-[800px] md:w-[1000px] md:h-[1000px] lg:w-[1200px] lg:h-[1200px] xl:w-[1400px] xl:h-[1400px] object-contain"
               style={{ maxWidth: 'none', width: 'auto', height: 'auto' }}
             />
             <img 
               src="/images/websat.png" 
               alt="ORCA Web Satellite" 
-              className="w-[3500px] h-[3500px] md:w-[5000px] md:h-[5000px] lg:w-[6000px] lg:h-[6000px] xl:w-[7000px] xl:h-[7000px] object-contain"
+              className="w-[800px] h-[800px] md:w-[1000px] md:h-[1000px] lg:w-[1200px] lg:h-[1200px] xl:w-[1400px] xl:h-[1400px] object-contain"
               style={{ maxWidth: 'none', width: 'auto', height: 'auto' }}
             />
           </div>
@@ -111,6 +111,100 @@ export default function ORCA() {
             <p>
               ORCA provides the solution: an orbital recycling and construction array that captures debris, refines the materials, and 3D prints new infrastructure in space, creating a sustainable circular economy in orbit.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Satellite Systems Section */}
+      <section className="relative py-20 px-4 bg-gray-900">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1920)'
+          }}
+        ></div>
+        <div className="relative max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">ORCA Satellite Systems</h2>
+          <div className="w-20 h-1 bg-red-500 mx-auto mb-12"></div>
+          
+          <div className="space-y-16">
+            {/* Central Hub */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4 text-blue-400">Central Hub</h3>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  The ORCA central hub acts as the network's operational headquarters and serves as the processing and redistribution center for collected debris. Positioned in low Earth orbit, it receives materials gathered by TugSat and FishNetSat, which are then sorted and repurposed for further industrial use.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  The hub supports real-time coordination among satellites through automated communication links and maintains a processing capacity scalable to handle multiple debris payloads simultaneously. It plays a key role in sustainability, reducing the need to launch new materials from Earth by recycling in-orbit debris into reusable components.
+                </p>
+                <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                  <h4 className="text-lg font-semibold mb-2 text-blue-400">Key Statistics</h4>
+                  <p className="text-gray-300">
+                    Over 27,000 trackable objects larger than 10 centimeters orbiting Earth, with 500,000+ debris fragments between 1-10 cm and 100+ million smaller than 1 cm - highlighting the vast scale of reusable orbital resources.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/satellite.png" 
+                  alt="Central Hub" 
+                  className="w-96 h-96 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* TugSat */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <img 
+                  src="/images/grabsat.png" 
+                  alt="TugSat" 
+                  className="w-96 h-96 object-contain mx-auto"
+                />
+              </div>
+              <div className="order-1 md:order-2">
+                <h3 className="text-3xl font-bold mb-4 text-green-400">TugSat (Large Debris Collector)</h3>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  The TugSat is responsible for capturing and transporting larger debris objects — typically between 10 cm and 1 meter in size — that pose significant collision risks in low Earth orbit. Using precision thrusters and a robotic arm, each TugSat can secure and tow debris fragments to the central hub for reprocessing.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  These satellites are designed with durable magnetic clamps and controlled propulsion to stabilize large objects during transit, preventing secondary fragmentation. The TugSat's operational efficiency ensures that each unit can retrieve multiple debris pieces per mission cycle, optimizing collection rates while maintaining fuel efficiency.
+                </p>
+                <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                  <h4 className="text-lg font-semibold mb-2 text-green-400">Key Statistics</h4>
+                  <p className="text-gray-300">
+                    Large debris objects (10+ cm) make up over 99.95% of total mass of all cataloged orbital debris, with approximately 27,000 tracked objects providing clear targets for TugSats to capture and recycle.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* FishNetSat */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4 text-yellow-400">FishNetSat (Small Debris Collector)</h3>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  FishNetSat targets smaller debris fragments, typically 1 mm to 10 cm in size, using a deployable net system capable of collecting and grinding materials into manageable particles. Once captured, the debris is compressed and transferred back to the central hub for material repurposing.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  These mini-satellites are lightweight and highly maneuverable, enabling them to sweep across dense debris regions and collect scattered particles that larger satellites cannot reach. The integrated grinding mechanism reduces volume and prevents re-fragmentation during transport.
+                </p>
+                <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                  <h4 className="text-lg font-semibold mb-2 text-yellow-400">Key Statistics</h4>
+                  <p className="text-gray-300">
+                    Medium-sized debris (1mm-10cm) accounts for tens of millions of pieces in LEO, with ~500,000 between 1-10cm and 100+ million smaller than 1cm, making FishNetSat's collection system essential for orbital safety.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/websat.png" 
+                  alt="FishNetSat" 
+                  className="w-96 h-96 object-contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
