@@ -7,7 +7,7 @@ export default function Focus() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2166729/pexels-photo-2166729.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+            backgroundImage: 'url(/images/ourFocusBg.png)',
             filter: 'brightness(0.25)'
           }}
         ></div>

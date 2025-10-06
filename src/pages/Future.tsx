@@ -7,7 +7,7 @@ export default function Future() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2166476/pexels-photo-2166476.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+            backgroundImage: 'url(/images/longTermVisionBg.png)',
             filter: 'brightness(0.25)'
           }}
         ></div>
@@ -33,7 +33,14 @@ export default function Future() {
           <h2 className="text-4xl font-bold mb-12 text-center">Next Decade Vision (2025-2035)</h2>
 
           <div className="space-y-12">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative grid md:grid-cols-2 gap-12 items-center">
+              {/* Traffic Management Background */}
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-5 rounded-lg"
+                style={{
+                  backgroundImage: 'url(/images/trafficManagement.png)'
+                }}
+              ></div>
               <div>
                 <div className="flex items-center mb-6">
                   <Network className="w-12 h-12 text-blue-400 mr-4" />

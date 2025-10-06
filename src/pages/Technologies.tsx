@@ -1,4 +1,4 @@
-import { Cpu, Rocket, Satellite, Radio, Camera, Zap } from 'lucide-react';
+import { Cpu, Rocket, Radio, Camera, Zap } from 'lucide-react';
 
 export default function Technologies() {
   return (
@@ -58,7 +58,7 @@ export default function Technologies() {
               <div
                 className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
                 style={{
-                  backgroundImage: 'url(https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?auto=compress&cs=tinysrgb&w=800)'
+                  backgroundImage: 'url(/images/ebam.png)'
                 }}
               ></div>
             </div>
@@ -102,7 +102,7 @@ export default function Technologies() {
               <div
                 className="h-64 bg-cover bg-center rounded-lg border border-gray-800"
                 style={{
-                  backgroundImage: 'url(https://images.pexels.com/photos/586063/pexels-photo-586063.jpeg?auto=compress&cs=tinysrgb&w=800)'
+                  backgroundImage: 'url(/images/gecko.png)'
                 }}
               ></div>
             </div>

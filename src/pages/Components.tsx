@@ -34,7 +34,7 @@ export default function Components() {
       title: "Debris Deposition",
       subtitle: "Satellite Material Processing",
       description: "Automated system for depositing and positioning captured debris materials for processing. Ensures proper orientation and secure placement of various satellite components and materials.",
-      image: "/images/bodydecant1.png",
+      image: "/images/bodydecant2.png",
       icon: Settings,
       color: "text-blue-400",
       features: [
@@ -50,7 +50,7 @@ export default function Components() {
       title: "Heat Decontamination",
       subtitle: "Thermal Cleaning System",
       description: "High-temperature processing system that removes contaminants, coatings, and impurities from captured debris materials through controlled thermal treatment.",
-      image: "/images/heatcont1.png",
+      image: "/images/heatcont2.png",
       icon: Zap,
       color: "text-red-400",
       features: [
@@ -66,7 +66,7 @@ export default function Components() {
       title: "Centrifuge Material Sorting",
       subtitle: "Automated Material Separation",
       description: "High-speed centrifugal system that separates materials by density and composition, enabling efficient sorting of mixed debris into pure material streams for recycling.",
-      image: "/images/centri1.png",
+      image: "/images/centri2.png",
       icon: Grip,
       color: "text-green-400",
       features: [
@@ -82,7 +82,7 @@ export default function Components() {
       title: "Slag/Waste Containment",
       subtitle: "Waste Management System",
       description: "Secure containment system for processing byproducts and non-recyclable materials, ensuring safe storage and disposal of waste products from the recycling process.",
-      image: "/images/slag1.png",
+      image: "/images/slag2.png",
       icon: Settings,
       color: "text-gray-400",
       features: [
@@ -98,7 +98,7 @@ export default function Components() {
       title: "Wire Spool",
       subtitle: "Material Feed System",
       description: "Automated wire and material feeding system that supplies raw materials to the 3D printer, ensuring continuous operation and precise material delivery for manufacturing processes.",
-      image: "/images/spool1.png",
+      image: "/images/spool2.png",
       icon: Zap,
       color: "text-yellow-400",
       features: [
@@ -114,7 +114,7 @@ export default function Components() {
       title: "3D Printer",
       subtitle: "Additive Manufacturing",
       description: "Advanced 3D printing system that constructs new components and structures from recycled materials, enabling on-demand manufacturing of replacement parts and new infrastructure.",
-      image: "/images/printer1.png",
+      image: "/images/printer2.png",
       icon: Zap,
       color: "text-purple-400",
       features: [
@@ -180,11 +180,19 @@ export default function Components() {
                   key={component.id}
                   ref={(el) => (itemRefs.current[index] = el)}
                   data-index={index}
-                  className={`transition-all duration-1000 ${
+                  className={`relative transition-all duration-1000 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
                 >
-                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${
+                  {/* Component Background */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-5 rounded-lg"
+                    style={{
+                      backgroundImage: `url(${component.image})`
+                    }}
+                  ></div>
+                  
+                  <div className={`relative grid lg:grid-cols-2 gap-12 items-center ${
                     index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                   }`}>
                     {/* Image */}

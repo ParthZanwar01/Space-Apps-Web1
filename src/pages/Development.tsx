@@ -26,7 +26,7 @@ export default function Development() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2162/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1920)'
+            backgroundImage: 'url(/images/predictiveMaintainence.png)'
           }}
         ></div>
         <div className="relative max-w-6xl mx-auto">
